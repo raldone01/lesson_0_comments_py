@@ -13,7 +13,7 @@ def get_call_site_source_code(current_frame) -> str:
     function_call = caller.code_context[positions.lineno - 1 : positions.end_lineno]
 
     # Remove whitespaces and newlines
-    call_site_source_code = re.sub("\s+", " ", "".join(function_call))
+    call_site_source_code = re.sub(r"\s+", " ", "".join(function_call))
     return call_site_source_code
 
 
