@@ -25,7 +25,6 @@ def get_call_site_lasts_comment(source_code: str) -> str:
 def add():
     current_frame = inspect.currentframe()
     source_code = get_call_site_source_code(current_frame)
-    ic(source_code)
     comment = get_call_site_lasts_comment(source_code)
     # strip whitespaces
     comment = comment.strip()
