@@ -1,6 +1,5 @@
 import re
 import inspect
-from icecream import ic
 
 
 def get_call_site_source_code(current_frame) -> str:
